@@ -1,0 +1,14 @@
+//
+//  CodeSignOSXAppStoreDistribution.xcconfig
+//  ZeoSpace.Engine
+//
+//  Created by Томенко Андрей on 12/28/13.
+//
+//
+
+CODE_SIGN_ENTITLEMENTS =
+CODE_SIGN_IDENTITY = iPhone Developer
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer
+CODE_SIGN_RESOURCE_RULES_PATH =
+OTHER_CODE_SIGN_FLAGS =
+PROVISIONING_PROFILE =

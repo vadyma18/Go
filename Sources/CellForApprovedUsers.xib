@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AproveForPassViewCell" rowHeight="60" id="KGk-i7-Jjw" customClass="CellForApprovedUsers" customModule="go" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAB-yN-6hR">
+                        <rect key="frame" x="66" y="19" width="262" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJy-8v-lFd">
+                        <rect key="frame" x="66" y="0.0" width="262" height="1"/>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.90980392156862744" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="tpB-97-D0t"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.png" translatesAutoresizingMaskIntoConstraints="NO" id="3kg-cj-z0U">
+                        <rect key="frame" x="8" y="5" width="50" height="50"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cJy-8v-lFd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="58" id="7OJ-Ih-Ric"/>
+                    <constraint firstItem="cJy-8v-lFd" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="86p-3B-cGm"/>
+                    <constraint firstItem="3kg-cj-z0U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="F1j-7h-gAk"/>
+                    <constraint firstItem="eAB-yN-6hR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RJN-qx-PK3"/>
+                    <constraint firstItem="cJy-8v-lFd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TIH-cK-VgZ"/>
+                    <constraint firstItem="eAB-yN-6hR" firstAttribute="top" secondItem="cJy-8v-lFd" secondAttribute="bottom" constant="18" id="aKd-jI-xNh"/>
+                    <constraint firstItem="eAB-yN-6hR" firstAttribute="leading" secondItem="cJy-8v-lFd" secondAttribute="leading" id="cR7-cI-GwQ"/>
+                    <constraint firstItem="eAB-yN-6hR" firstAttribute="trailing" secondItem="cJy-8v-lFd" secondAttribute="trailing" id="kY4-z4-r05"/>
+                    <constraint firstItem="eAB-yN-6hR" firstAttribute="leading" secondItem="3kg-cj-z0U" secondAttribute="trailing" constant="8" symbolic="YES" id="l5G-7F-bFS"/>
+                    <constraint firstItem="3kg-cj-z0U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="wH7-EP-2YB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3kg-cj-z0U" secondAttribute="bottom" constant="-4" id="yVd-Pr-p0Y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="userAvatar" destination="3kg-cj-z0U" id="WIQ-3V-c6f"/>
+                <outlet property="userNameLabel" destination="eAB-yN-6hR" id="loJ-OI-hQ5"/>
+            </connections>
+            <point key="canvasLocation" x="544" y="350"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.png" width="649" height="659"/>
+    </resources>
+</document>

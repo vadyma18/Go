@@ -1,0 +1,24 @@
+//
+//  iOSConfig.xcconfig
+//  ZeoSpace.Engine
+//
+//  Created by Томенко Андрей on 12/28/13.
+//
+//
+
+// Custom definitions
+ZS_BUNDLE_ID = net.zeo.space.ios
+
+// Architectures
+ARCHS = $(ARCHS_STANDARD_32_BIT)
+SDKROOT = iphoneos
+SUPPORTED_PLATFORMS = iphonesimulator iphoneos
+
+// Build options
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+// Distribution
+TARGETED_DEVICE_FAMILY = 1 // iPhone
+IPHONEOS_DEPLOYMENT_TARGET = 7.0
+
+USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**"

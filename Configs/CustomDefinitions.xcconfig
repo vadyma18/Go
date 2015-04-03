@@ -1,0 +1,26 @@
+//
+//  CustomDefinitions.xcconfig
+//  ZeoSpace.Engine
+//
+//  Created by Томенко Андрей on 12/28/13.
+//
+//
+
+// Defenitions to modify
+
+//ZB_BUILD_VERSION = 1
+//ZB_PRODUCT_VERSION = 0.1
+//ZB_REVISION =
+
+// Plist definitions
+//ZB_BUNDLE_ID = net.zeo.space.ios
+//ZB_PRODUCT_NAME = ZeoSpace
+//ZB_COMPANY_NAME = ZeoSpace Limited
+//ZB_APPLICATION_CATEGORY = public.app-category.productivity
+//ZB_DEVELOPMENT_REGION = en_US
+//ZB_HUMAN_READABLE_COPYRIGHT = Copyright © 2014 ZeoSpace Limited
+//ZB_APPLICATION_ICON = ZeoSpaceIcon
+
+// Other definitions
+//ZS_DEVELOPMENT_TEAM = GCZ4EVK45S // ZeoSpace Limited
+

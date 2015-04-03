@@ -1,0 +1,30 @@
+//
+//  Debug.xcconfig
+//  ZeoSpace.Engine
+//
+//  Created by Томенко Андрей on 12/28/13.
+//
+//
+
+#include "Configs/Common.xcconfig"
+#include "Configs/CodeSignIOS.xcconfig"
+
+// Architectures
+ONLY_ACTIVE_ARCH = YES
+
+// Build options
+DEBUG_INFORMATION_FORMAT = dwarf
+VALIDATE_PRODUCT = NO
+
+// Deployment
+DEPLOYMENT_POSTPROCESSING = NO
+COPY_PHASE_STRIP = NO
+STRIP_INSTALLED_PRODUCT = NO
+
+// Apple LLVM 5.0 Code Generation
+GCC_OPTIMIZATION_LEVEL = 0
+GCC_SYMBOLS_PRIVATE_EXTERN = NO
+
+ENABLE_NS_ASSERTIONS = YES
+
+GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1" $(inherited)

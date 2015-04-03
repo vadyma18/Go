@@ -1,0 +1,32 @@
+//
+//  Release.xcconfig
+//  ZeoSpace.Engine
+//
+//  Created by Томенко Андрей on 12/28/13.
+//
+//
+
+#include "Configs/Common.xcconfig"
+
+// Architectures
+ONLY_ACTIVE_ARCH = NO
+
+// Build options
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+VALIDATE_PRODUCT = YES
+
+// Deployment
+DEPLOYMENT_POSTPROCESSING = YES
+COPY_PHASE_STRIP = YES
+STRIP_INSTALLED_PRODUCT = YES
+
+// Apple LLVM 5.0 Code Generation
+GCC_OPTIMIZATION_LEVEL = s
+GCC_SYMBOLS_PRIVATE_EXTERN = YES
+
+ENABLE_NS_ASSERTIONS = NO
+
+GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1" NS_BLOCK_ASSERTIONS $(inherited)
+
+// Code sign
+CODE_SIGN_IDENTITY = iPhone Distribution

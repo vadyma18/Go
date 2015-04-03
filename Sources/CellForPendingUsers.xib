@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PendingCell" rowHeight="70" id="KGk-i7-Jjw" customClass="CellForPendingUsers" customModule="go" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yp-tx-l8n">
+                        <rect key="frame" x="277" y="16" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="ng9-II-YDh"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="decline button">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onDelete:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1eC-gO-8Em"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxD-Vb-KqN">
+                        <rect key="frame" x="237" y="16" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Rrw-mq-zDs"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="accept button">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onAccept:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="026-ui-aE6"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbr-13-feW">
+                        <rect key="frame" x="197" y="16" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="owy-l3-urG"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="call button">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onCall:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nRm-ag-7UH"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQv-Mm-71b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q1r-3S-M7W">
+                                <rect key="frame" x="2" y="5" width="60" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="jdD-9e-zuX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSX-TB-FTO">
+                                <rect key="frame" x="70" y="25" width="110" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wSX-TB-FTO" firstAttribute="top" secondItem="qQv-Mm-71b" secondAttribute="top" constant="25" id="1ia-p4-Cki"/>
+                            <constraint firstItem="Q1r-3S-M7W" firstAttribute="leading" secondItem="qQv-Mm-71b" secondAttribute="leading" constant="2" id="4Jx-DQ-Pyz"/>
+                            <constraint firstItem="Q1r-3S-M7W" firstAttribute="top" secondItem="qQv-Mm-71b" secondAttribute="top" constant="5" id="7l5-0U-8K8"/>
+                            <constraint firstAttribute="bottom" secondItem="wSX-TB-FTO" secondAttribute="bottom" constant="25" id="7py-Ua-Ajr"/>
+                            <constraint firstItem="wSX-TB-FTO" firstAttribute="leading" secondItem="Q1r-3S-M7W" secondAttribute="trailing" constant="8" id="NIl-o3-zTZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Q1r-3S-M7W" secondAttribute="bottom" constant="5" id="STx-hF-a7n"/>
+                            <constraint firstAttribute="trailing" secondItem="wSX-TB-FTO" secondAttribute="trailing" constant="140" id="xo6-0P-dx8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qQv-Mm-71b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ABL-q8-83k"/>
+                    <constraint firstItem="IxD-Vb-KqN" firstAttribute="leading" secondItem="lbr-13-feW" secondAttribute="trailing" id="KhI-1E-uRK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="IxD-Vb-KqN" secondAttribute="bottom" constant="5" id="KkJ-D7-XOW"/>
+                    <constraint firstItem="IxD-Vb-KqN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="bHY-nl-zzy"/>
+                    <constraint firstAttribute="trailing" secondItem="2Yp-tx-l8n" secondAttribute="trailing" constant="3" id="eWn-FA-A2L"/>
+                    <constraint firstAttribute="bottom" secondItem="2Yp-tx-l8n" secondAttribute="bottom" constant="13" id="hRJ-jO-gKg"/>
+                    <constraint firstItem="2Yp-tx-l8n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="j2M-3X-Xra"/>
+                    <constraint firstItem="lbr-13-feW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="kJU-VE-wJc"/>
+                    <constraint firstItem="qQv-Mm-71b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kY2-at-il1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lbr-13-feW" secondAttribute="bottom" constant="5" id="lJG-IF-eoj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qQv-Mm-71b" secondAttribute="bottom" constant="-8" id="nfE-Lg-SHv"/>
+                    <constraint firstAttribute="trailing" secondItem="qQv-Mm-71b" secondAttribute="trailing" id="o91-V9-Ucs"/>
+                    <constraint firstItem="2Yp-tx-l8n" firstAttribute="leading" secondItem="IxD-Vb-KqN" secondAttribute="trailing" id="ome-GN-43F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="approveUserPendingUserButton" destination="IxD-Vb-KqN" id="Udw-4e-jEf"/>
+                <outlet property="callUserPendingUserButton" destination="lbr-13-feW" id="2sP-tS-PT4"/>
+                <outlet property="deleteUserPendingUserButton" destination="2Yp-tx-l8n" id="R9K-yM-Lhl"/>
+                <outlet property="theLeftConstraint" destination="ABL-q8-83k" id="lhC-kG-MTA"/>
+                <outlet property="theRightConstraint" destination="o91-V9-Ucs" id="ER6-Qo-dvl"/>
+                <outlet property="userAvatar" destination="Q1r-3S-M7W" id="zPm-wG-Puh"/>
+                <outlet property="userNameLabel" destination="wSX-TB-FTO" id="XMV-sj-BC4"/>
+                <outlet property="view" destination="qQv-Mm-71b" id="cQF-Ha-rAV"/>
+            </connections>
+            <point key="canvasLocation" x="372" y="453"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="accept button" width="53" height="53"/>
+        <image name="call button" width="53" height="53"/>
+        <image name="decline button" width="53" height="53"/>
+        <image name="person.png" width="649" height="659"/>
+    </resources>
+</document>

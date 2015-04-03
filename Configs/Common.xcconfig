@@ -1,0 +1,45 @@
+//
+//  BaseConfig.xcconfig
+//  ZeoSpace.Engine
+//
+//  Created by Томенко Андрей on 12/28/13.
+//
+//
+
+#include "Configs/CompilerWarnings.xcconfig"
+#include "Configs/CustomDefinitions.xcconfig"
+
+// Architectures
+
+// Build Locations
+
+// Build options
+GCC_VERSION = com.apple.compilers.llvm.clang.1_0
+VALIDATE_PRODUCT =
+
+// Deployment
+STRIP_STYLE = all
+
+// Packing
+INFOPLIST_EXPAND_BUILD_SETTINGS = YES
+INFOPLIST_PREFIX_HEADER = Configs/CustomDefinitions.xcconfig
+INFOPLIST_FILE = Go/SDKDemos/Resources/${TARGET_NAME}-Info.plist
+COPYING_PRESERVES_HFS_DATA = YES
+PRODUCT_NAME = ${ZB_PRODUCT_NAME}
+WRAPPER_EXTENSION = app// framework, app,
+
+// Search Paths
+ALWAYS_SEARCH_USER_PATHS = NO
+USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**"
+OTHER_LDFLAGS = "-ObjC" $(inherited)
+
+// Apple LLVM 5.0
+GCC_C_LANGUAGE_STANDARD = gnu99
+//GCC_PREFIX_HEADER = Sources/${TARGET_NAME}-Prefix.pch
+//GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_ENABLE_OBJC_EXCEPTIONS = YES
+CLANG_ENABLE_OBJC_ARC = YES
+ENABLE_NS_ASSERTIONS = YES
+
+// Static analyzer
+RUN_CLANG_STATIC_ANALYZER = NO
