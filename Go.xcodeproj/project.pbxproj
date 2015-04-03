@@ -67,7 +67,6 @@
 		AAC9877E1A484357000482CE /* UserAvatarPreloadImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = AAC9877D1A484357000482CE /* UserAvatarPreloadImage.gif */; };
 		AAC987801A48504B000482CE /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC9877F1A48504B000482CE /* UIImage+Gif.swift */; };
 		AAD14D691A404A0C00C271F8 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD14D681A404A0C00C271F8 /* SideBarViewController.swift */; };
-		AAD14D6B1A404A2500C271F8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD14D6A1A404A2500C271F8 /* MenuViewController.swift */; };
 		C908568F1A5AF95C009B166D /* SwipableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908568E1A5AF95C009B166D /* SwipableCell.swift */; };
 		C914B0F51A644C9800D63B74 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C914B0F41A644C9800D63B74 /* GoogleMaps.framework */; };
 		C914B0F71A644CD900D63B74 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C914B0F61A644CD900D63B74 /* GoogleMaps.bundle */; };
@@ -180,7 +179,6 @@
 		AAC9877D1A484357000482CE /* UserAvatarPreloadImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = UserAvatarPreloadImage.gif; sourceTree = "<group>"; };
 		AAC9877F1A48504B000482CE /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		AAD14D681A404A0C00C271F8 /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
-		AAD14D6A1A404A2500C271F8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C908568E1A5AF95C009B166D /* SwipableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipableCell.swift; sourceTree = "<group>"; };
 		C914B0F41A644C9800D63B74 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		C914B0F61A644CD900D63B74 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
@@ -403,7 +401,6 @@
 				19DB00FD1A3F7D99009309EE /* AdditionalInfoRouteViewController.swift */,
 				C9F152B11A3BACC0008188FF /* UserProfileTableViewController.swift */,
 				AAD14D681A404A0C00C271F8 /* SideBarViewController.swift */,
-				AAD14D6A1A404A2500C271F8 /* MenuViewController.swift */,
 				C97D9C4B1A3A11AA00926766 /* RouteDriverPreviewTableView.swift */,
 				5E29540C1A4876150044B771 /* MapInfoViewController.swift */,
 				193D2A091A7A76070042F2CD /* NavigationSideBarController.swift */,
@@ -619,7 +616,6 @@
 				C9D7A1A11A1FC5E300416B35 /* RoutesSearchController.swift in Sources */,
 				19CCF8271A27A02B0091E4D9 /* RoutePassengerPreviewViewController.swift in Sources */,
 				C908568F1A5AF95C009B166D /* SwipableCell.swift in Sources */,
-				AAD14D6B1A404A2500C271F8 /* MenuViewController.swift in Sources */,
 				193D2A0C1A7A7D570042F2CD /* StoryBoardSegue.swift in Sources */,
 				7B154A5219640B8700617761 /* GoServer.swift in Sources */,
 				C9CAFD3C1A239B780034F995 /* DateExtention.swift in Sources */,
